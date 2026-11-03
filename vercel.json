@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "*.php": {
+      "runtime": "vercel-php@0.7.4"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*).php",
+      "dest": "$1.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "tela_principal/$1"
+    }
+  ]
+}
