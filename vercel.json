@@ -1,13 +1,25 @@
 {
   "functions": {
-    "*.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.7.4"
     }
   },
   "routes": [
     {
-      "src": "/(.*).php",
-      "dest": "$1.php"
+      "src": "/api/login.php",
+      "dest": "/api/login.php"
+    },
+    {
+      "src": "/api/cadastro.php",
+      "dest": "/api/cadastro.php"
+    },
+    {
+      "src": "/api/esqueceu_senha.php",
+      "dest": "/api/esqueceu_senha.php"
+    },
+    {
+      "src": "/api/troca_de_senha.php",
+      "dest": "/api/troca_de_senha.php"
     },
     {
       "src": "/(.*)",
