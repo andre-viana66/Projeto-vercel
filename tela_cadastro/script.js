@@ -129,7 +129,7 @@ formulario.addEventListener("submit", function(event) { //Cria um evento de escu
 
     console.log(usuario, email, senha, confirmarSenha); // Exibe os valores no console para verificação
 
-    fetch("cadastro.php", { // Envia os dados para o arquivo PHP usando fetch o fetch é uma API do JavaScript que permite fazer requisições HTTP de forma assíncrona
+    fetch("/api/cadastro.php", { // Envia os dados para o arquivo PHP usando fetch o fetch é uma API do JavaScript que permite fazer requisições HTTP de forma assíncrona
         method: "POST", // Define o método como POST metodo responsavel por enviar dados para o servidor
 
         headers: { // Define os cabeçalhos da requisição

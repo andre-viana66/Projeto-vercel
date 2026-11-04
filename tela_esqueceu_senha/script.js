@@ -28,7 +28,7 @@ formulario.addEventListener("submit", function(event) { //Cria um evento de escu
 
     
 
-    fetch("esqueceu_senha.php", {
+    fetch("/api/esqueceu_senha.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

@@ -22,8 +22,8 @@
       "dest": "/api/troca_de_senha.php"
     },
     {
-      "src": "/(.*)",
-      "dest": "tela_principal/$1"
+      "src": "/",
+      "dest": "/tela_principal/liepedia.html"
     }
   ]
 }
