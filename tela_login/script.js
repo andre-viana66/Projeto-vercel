@@ -93,7 +93,7 @@ FormularioLogin.addEventListener("submit", function (event) {
 
     limparMensagemErro(); // Limpa a mensagem de erro se os campos estiverem preenchidos
 
-    fetch("login.php", { // Faz uma requisição para o arquivo login.php
+    fetch("/api/login.php", { // Faz uma requisição para o arquivo /api/login.php
         method: "POST", // Define o método da requisição como POST
         headers: { // Define o cabeçalho da requisição como JSON
             "Content-Type": "application/json"
